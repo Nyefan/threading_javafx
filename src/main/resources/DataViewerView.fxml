@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nyefan.demos.threading.controller.DataViewerController">
+    <children>
+        <Pane layoutX="14.0" layoutY="14.0" prefHeight="179.0" prefWidth="572.0">
+            <children>
+                <Label fx:id="receivedTimeLabel" layoutX="42.0" layoutY="14.0" text="Received Current Time:">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="receivedTimeHourLabel" layoutX="59.0" layoutY="76.0" text="Hour:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="receivedTimeMinuteLabel" layoutX="318.0" layoutY="75.0" text="Minute:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="receivedTimeHourField" editable="false" layoutX="137.0" layoutY="77.0" />
+                <TextField fx:id="receivedTimeMinuteField" editable="false" layoutX="409.0" layoutY="76.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="14.0" layoutY="207.0" prefHeight="179.0" prefWidth="572.0">
+            <children>
+                <TextField fx:id="updateIntervalField" layoutX="286.0" layoutY="77.0" />
+                <Label fx:id="updateIntervalLabel" layoutX="71.0" layoutY="76.0" text="Update Interval (S):">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="updateIntervalButton" layoutX="473.0" layoutY="70.0" mnemonicParsing="false" text="Set">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
