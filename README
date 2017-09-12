@@ -1,0 +1,6 @@
+mvn package
+cd target
+java -jar threading-1.0-SNAPSHOT.jar
+
+
+Please report bugs to nyefancoding@gmail.com
